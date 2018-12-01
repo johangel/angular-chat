@@ -1,0 +1,41 @@
+host {
+  display: block;
+}
+
+#conversationContainer {
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-image: url(/assets/img/msnbg.jpg);
+}
+
+#messagesContainer {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.open-close-container {
+  border: 1px solid #dddddd;
+  margin-top: 1em;
+  padding: 20px 20px 0px 20px;
+  color: #000000;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.guessMessage {
+  width: 55%;
+  min-width: 200px;
+  margin-left: auto;
+  background: #E9EBEE;
+  border-radius: 5px;
+  padding: 7px;
+  color: black;
+}
+
+.selfMessage {
+  width: 55%;
+  min-width: 200px;
+  background: #3578e5;
+  border-radius: 5px;
+  padding: 7px;
+  color: white;
+}

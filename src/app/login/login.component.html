@@ -1,0 +1,32 @@
+<div class="loginContainer">
+  <div class="container">
+    <div class="row justify-content-md-center">
+      <div class="col-md-3">
+        <div class="avatarFrameOffline marto15 marbo15">
+          <img src="assets/img/generic_avatar.png" class="avatarImg img-fluid" alt="">
+        </div>
+      </div>
+    </div>
+
+    <div class="row justify-content-md-center">
+      <div class="col-md-6">
+        <div class="center">
+          <h3>Iniciar Sesion</h3>
+        </div>
+        <p *ngIf="operation == 'register'">Ya tienes cuenta? Has <a (click)="operation = 'login'">Login</a></p>
+        <p *ngIf="operation == 'login'">Na tienes cuenta? <a (click)="operation = 'register'">Registrarse</a></p>
+        <div class="borderedContainer">
+          <input class="form-control marbo15" [(ngModel)]="email" type="email" placeholder="Ingrese Email">
+          <input class="form-control marbo15" [(ngModel)]="password" type="password" placeholder="Ingrese contraseña">
+          <input *ngIf="operation == 'register'" [(ngModel)]="nick" class="form-control marbo15" type="text" placeholder="Ingrese nick">
+        </div>
+        <div class="center marto15 ">
+          <a *ngIf="operation == 'login'" (click)="login()" class="btn btn-primary">Iniciar Sesion</a>
+          <!-- <a *ngIf="operation == 'login'" (click)="loginWithFacebook()" class="btn btn-primary">ingresas con Fb</a> -->
+          <a *ngIf="operation == 'register'" (click)="register()" class="btn btn-primary">Registrarme</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>

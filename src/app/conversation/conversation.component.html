@@ -1,0 +1,55 @@
+<div id="conversationContainer">
+
+  <div class="container">
+
+    <div id="whiteBorderGlassBox pt-2">
+      <div class="homeHeadContainer">
+
+        <div class="row p-2">
+
+          <div class="col-auto">
+            <div class="avatarFrameonline">
+              <img src="assets/img/generic_avatar.png" id="homeAvatarPicture" alt="">
+            </div>
+          </div>
+
+          <div class="col">
+            <h4 class="d-inline"> <strong *ngIf="friend">{{friend.nick}}</strong> </h4>
+            <h5 class="d-inline">(Online)</h5> <br>
+            <span class="d-block mt-3 strong">Mensaje Personal</span>
+            <hr>
+            <div class="mt-4 border border-light shadow p-2 rounded" style="height: 350px; overflow-y: scroll" id="messagesContainer">
+              <p class="selfMessage">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur, ratione?</p>
+              <p class="guessMessage">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur, ratione?</p>
+              <p class="guessMessage">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur, ratione?</p>
+              <p class="selfMessage">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur, ratione?</p>
+            </div>
+          </div>
+
+          <hr>
+        </div>
+
+        <div class="row" id="chatContainer">
+
+          <div class="col-auto">
+            <div class="avatarFrameonline">
+              <img src="assets/img/generic_avatar.png" id="homeAvatarPicture" alt="">
+            </div>
+          </div>
+
+          <div class="col">
+            <textarea name="" id="" class="form-control" rows="3"></textarea>
+            <div class="border p-2 d-flex justify-content-between align-items-center mt-1">
+              <img src="assets/img/zumbido.png" class="icon" alt="">
+              <button class="btn btn-sm btn-info">enviar</button>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+
+</div>
